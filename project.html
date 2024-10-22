@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+
+    <!-- Navigation (ensure it's the same style as in your main page) -->
+    <body>
+        <header class="relative z-50">
+            <!-- Top colored bar -->
+            <div class="h-1 bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 animate-gradient"></div>
+            
+            <!-- Main header -->
+            <nav class="bg-white border-b border-gray-100 shadow-sm">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="flex justify-between h-16">
+                        <!-- Logo and Brand -->
+                        <div class="flex items-center">
+                            <a href="#" class="flex items-center">
+                                <!-- Logo placeholder -->
+                                <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center text-white font-bold text-xl">
+                                    F
+                                </div>
+                                <span class="ml-3 text-xl font-bold bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">
+                                    Explore The Best Formation
+                                </span>
+                            </a>
+                        </div>
+    
+                        <!-- Desktop Navigation -->
+                        <div class="hidden sm:flex sm:items-center sm:space-x-8">
+                            <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition-all duration-300">Home</a>
+                            <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition-all duration-300">About</a>
+                            <a href="project.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition-all duration-300">Projects</a>
+                            <button onclick="scrollToSection()" class="px-4 py-2 rounded-md text-sm font-medium text-white bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105">Get Started</button>
+                        </div>
+    
+                        <!-- Mobile menu button -->
+                        <div class="flex items-center sm:hidden">
+                            <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition-all duration-300">
+                                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+    
+                    <!-- Mobile menu -->
+                    <div id="mobile-menu" class="hidden sm:hidden border-b border-gray-200">
+                        <div class="px-2 pt-2 pb-3 space-y-1">
+                            <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition-all duration-300">Home</a>
+                            <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition-all duration-300">About</a>
+                            <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition-all duration-300">Projects</a>
+                            <button class="w-full mt-2 px-4 py-2 rounded-md text-sm font-medium text-white bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 transition-all duration-300">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+    <!-- Case Studies/Projects Showcase Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4 bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">
+                    Featured Projects & Case Studies
+                </h2>
+                <p class="text-gray-600 text-lg font-medium max-w-2xl mx-auto">
+                    Explore how data analysis and machine learning solutions have helped teams optimize their performance.
+                </p>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="relative">
+                        <div class="h-48 bg-gradient-to-r from-blue-500 to-purple-600"></div>
+                        <div class="absolute top-4 left-4">
+                            <span class="px-3 py-1 bg-white rounded-full text-sm font-medium text-blue-600">
+                                Football Analytics
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">
+                            Premier League Formation Analysis
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            Analyzed 500+ matches to identify optimal formations based on team composition and opponent strategies.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-blue-50 text-blue-600 rounded text-sm">Python</span>
+                            <span class="px-2 py-1 bg-purple-50 text-purple-600 rounded text-sm">Machine Learning</span>
+                            <span class="px-2 py-1 bg-green-50 text-green-600 rounded text-sm">Data Visualization</span>
+                        </div>
+                        <a href="#" class="text-blue-600 hover:text-blue-700 font-medium flex items-center">
+                            View Case Study
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="relative">
+                        <div class="h-48 bg-gradient-to-r from-green-400 to-blue-500"></div>
+                        <div class="absolute top-4 left-4">
+                            <span class="px-3 py-1 bg-white rounded-full text-sm font-medium text-green-600">
+                                Performance Analytics
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">
+                            Player Performance Prediction
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            Developed ML models to predict player performance based on historical data and match conditions.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-blue-50 text-blue-600 rounded text-sm">TensorFlow</span>
+                            <span class="px-2 py-1 bg-purple-50 text-purple-600 rounded text-sm">Deep Learning</span>
+                            <span class="px-2 py-1 bg-green-50 text-green-600 rounded text-sm">Statistical Analysis</span>
+                        </div>
+                        <a href="#" class="text-blue-600 hover:text-blue-700 font-medium flex items-center">
+                            View Case Study
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="relative">
+                        <div class="h-48 bg-gradient-to-r from-purple-500 to-pink-500"></div>
+                        <div class="absolute top-4 left-4">
+                            <span class="px-3 py-1 bg-white rounded-full text-sm font-medium text-purple-600">
+                                Team Strategy
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">
+                            Tactical Pattern Analysis
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            Identified successful tactical patterns through analysis of match data and team formations.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-blue-50 text-blue-600 rounded text-sm">R</span>
+                            <span class="px-2 py-1 bg-purple-50 text-purple-600 rounded text-sm">Pattern Recognition</span>
+                            <span class="px-2 py-1 bg-green-50 text-green-600 rounded text-sm">Data Mining</span>
+                        </div>
+                        <a href="#" class="text-blue-600 hover:text-blue-700 font-medium flex items-center">
+                            View Case Study
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4 bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">
+                    About Me
+                </h2>
+                <p class="text-gray-600 text-lg font-medium max-w-2xl mx-auto">
+                    Passionate Data Analyst and Machine Learning enthusiast with a deep understanding of extracting valuable insights to drive performance optimization in various industries. I thrive on using data to solve complex challenges and drive impactful decisions.
+                </p>
+            </div>
+    
+            <!-- About Content -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <!-- Image or Illustration -->
+                <div>
+                    <img src="https://via.placeholder.com/400x400" alt="Profile Picture" class="rounded-xl shadow-lg mx-auto">
+                </div>
+                
+                <!-- Text Content -->
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Who I Am</h3>
+                    <p class="text-gray-600 mb-4">
+                        I specialize in data analytics, machine learning, and web development with a passion for football analytics. My background includes working with various tools and technologies to create data-driven strategies that elevate team performance and business outcomes.
+                    </p>
+                    <p class="text-gray-600 mb-4">
+                        With extensive experience in Python, SQL, data visualization, and machine learning, I focus on finding patterns and insights that lead to actionable solutions. My goal is to continuously push the boundaries of data science and drive innovation through technology.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm font-medium">Data Science</span>
+                        <span class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm font-medium">Machine Learning</span>
+                        <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm font-medium">Data Visualization</span>
+                        <span class="px-3 py-1 bg-yellow-100 text-yellow-600 rounded-full text-sm font-medium">Football Analytics</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+
+
+
+
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4 bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">
+                    My Portfolio
+                </h2>
+                <p class="text-gray-600 text-lg font-medium max-w-2xl mx-auto">
+                    Explore my recent projects and achievements in data analysis, machine learning, and football analytics
+                </p>
+            </div>
+    
+            <!-- Portfolio Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Portfolio Item 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow transform hover:-translate-y-1 duration-300">
+                    <div class="relative">
+                        <div class="h-48 bg-gradient-to-r from-blue-500 to-purple-600">
+                            <img src="image/screenshot20240718231836.png" alt="Project Preview" class="w-full h-full object-cover opacity-75">
+                        </div>
+                        <div class="absolute top-4 left-4">
+                            <span class="px-3 py-1 bg-white rounded-full text-sm font-medium text-blue-600">
+                                Data Analysis
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">
+                            Football Match Analysis Dashboard
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            Interactive dashboard for analyzing team performance, player statistics, and match outcomes using Python and Streamlit.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-blue-50 text-blue-600 rounded text-sm">Python</span>
+                            <span class="px-2 py-1 bg-purple-50 text-purple-600 rounded text-sm">Streamlit</span>
+                            <span class="px-2 py-1 bg-green-50 text-green-600 rounded text-sm">Pandas</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-blue-600 hover:text-blue-700 font-medium flex items-center">
+                                View Project
+                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                            <div class="flex space-x-2">
+                                <a href="#" class="text-gray-400 hover:text-gray-600">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="text-gray-400 hover:text-gray-600">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Portfolio Item 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow transform hover:-translate-y-1 duration-300">
+                    <div class="relative">
+                        <div class="h-48 bg-gradient-to-r from-green-400 to-blue-500">
+                            <img src="image/screenshot20240718232030.png" alt="Project Preview" class="w-full h-full object-cover opacity-75">
+                        </div>
+                        <div class="absolute top-4 left-4">
+                            <span class="px-3 py-1 bg-white rounded-full text-sm font-medium text-green-600">
+                                Machine Learning
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">
+                            Player Performance Predictor
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            ML model to predict player performance using historical data and advanced statistics.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-blue-50 text-blue-600 rounded text-sm">TensorFlow</span>
+                            <span class="px-2 py-1 bg-purple-50 text-purple-600 rounded text-sm">Scikit-learn</span>
+                            <span class="px-2 py-1 bg-green-50 text-green-600 rounded text-sm">NumPy</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-blue-600 hover:text-blue-700 font-medium flex items-center">
+                                View Project
+                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                            <div class="flex space-x-2">
+                                <a href="#" class="text-gray-400 hover:text-gray-600">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Portfolio Item 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow transform hover:-translate-y-1 duration-300">
+                    <div class="relative">
+                        <div class="h-48 bg-gradient-to-r from-purple-500 to-pink-500">
+                            <img src="image/DALL·E 2024-10-07 20.41.39 - A detailed flowchart showing the phases of a machine learning project, starting from data collection, data processing, to modeling. Phase 1 is 'Data C.webp" alt="Project Preview" class="w-full h-full object-cover opacity-75">
+                        </div>
+                        <div class="absolute top-4 left-4">
+                            <span class="px-3 py-1 bg-white rounded-full text-sm font-medium text-purple-600">
+                                Web Development
+                            </span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">
+                            Team Formation Analyzer
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            Web application for analyzing and visualizing team formations and tactical patterns.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-blue-50 text-blue-600 rounded text-sm">React</span>
+                            <span class="px-2 py-1 bg-purple-50 text-purple-600 rounded text-sm">D3.js</span>
+                            <span class="px-2 py-1 bg-green-50 text-green-600 rounded text-sm">Node.js</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="text-blue-600 hover:text-blue-700 font-medium flex items-center">
+                                View Project
+                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                            <div class="flex space-x-2">
+                                <a href="#" class="text-gray-400 hover:text-gray-600">
+                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                
+
+
+</body>
+</html>

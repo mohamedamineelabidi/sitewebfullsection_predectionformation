@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+
+    <!-- Navigation (ensure it's the same style as in your main page) -->
+    <body>
+        <header class="relative z-50">
+            <!-- Top colored bar -->
+            <div class="h-1 bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 animate-gradient"></div>
+            
+            <!-- Main header -->
+            <nav class="bg-white border-b border-gray-100 shadow-sm">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="flex justify-between h-16">
+                        <!-- Logo and Brand -->
+                        <div class="flex items-center">
+                            <a href="#" class="flex items-center">
+                                <!-- Logo placeholder -->
+                                <div class="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center text-white font-bold text-xl">
+                                    F
+                                </div>
+                                <span class="ml-3 text-xl font-bold bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">
+                                    Explore The Best Formation
+                                </span>
+                            </a>
+                        </div>
+    
+                        <!-- Desktop Navigation -->
+                        <div class="hidden sm:flex sm:items-center sm:space-x-8">
+                            <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition-all duration-300">Home</a>
+                            <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition-all duration-300">About</a>
+                            <a href="project.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition-all duration-300">Projects</a>
+                            <button onclick="scrollToSection()" class="px-4 py-2 rounded-md text-sm font-medium text-white bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105">Get Started</button>
+                        </div>
+    
+                        <!-- Mobile menu button -->
+                        <div class="flex items-center sm:hidden">
+                            <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition-all duration-300">
+                                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+    
+                    <!-- Mobile menu -->
+                    <div id="mobile-menu" class="hidden sm:hidden border-b border-gray-200">
+                        <div class="px-2 pt-2 pb-3 space-y-1">
+                            <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition-all duration-300">Home</a>
+                            <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition-all duration-300">About</a>
+                            <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition-all duration-300">Projects</a>
+                            <button class="w-full mt-2 px-4 py-2 rounded-md text-sm font-medium text-white bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 transition-all duration-300">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+        <body class="bg-gray-50">
+            <!-- Personal Information Section -->
+            <section class="py-12 bg-gray-50">
+                <div class="max-w-4xl mx-auto px-4">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                        <div class="flex flex-col md:flex-row">
+                            <!-- Profile Image Side -->
+                            <div class="relative w-full md:w-1/3">
+                                <img 
+                                    src="image/medaminelabidi.jpeg" 
+                                    alt="Med Amine Elabidi" 
+                                    class="h-80 md:h-full w-full object-cover"
+                                />
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
+                                    <h3 class=" text-white text-2xl font-bold">Med Amine El Abidi</h3>
+                                    <p class="text-gray-200">Data Analyst & ML Enthusiast</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Profile Info Side -->
+                            <div class="md:w-2/3 p-6 md:p-8">
+                                <!-- About Section -->
+                                <div class="mb-8">
+                                    <h2 class="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                                        About Me
+                                    </h2>
+                                    <p class="text-gray-600 leading-relaxed">
+                                        I'm a passionate data analyst and machine learning enthusiast with extensive experience 
+                                        in building predictive models. My work focuses on transforming complex data into 
+                                        actionable insights that drive strategic decisions in football analytics.
+                                    </p>
+                                </div>
+                                
+                                <!-- Skills Section -->
+                                <div class="mb-8">
+                                    <h3 class="text-lg font-semibold text-gray-800 mb-3">Expertise</h3>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-4 py-1.5 bg-blue-50 text-blue-600 rounded-lg text-sm font-medium">Data Analysis</span>
+                                        <span class="px-4 py-1.5 bg-purple-50 text-purple-600 rounded-lg text-sm font-medium">Machine Learning</span>
+                                        <span class="px-4 py-1.5 bg-green-50 text-green-600 rounded-lg text-sm font-medium">Football Analytics</span>
+                                        <span class="px-3 py-1 bg-yellow-100 text-yellow-600 rounded-full text-sm font-medium">Data Visualizatio</span>
+                                    </div>
+                                </div>
+                                
+                                <!-- Social Links -->
+                                <div class="flex space-x-5">
+                                    <a href="https://www.linkedin.com/in/mohamed-amine-el-abidi/" target="_blank" class="text-gray-400 hover:text-blue-500 transition-colors duration-200">
+                                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M22.23 0H1.77C.8 0 0 .77 0 1.72v20.56C0 23.23.8 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.2 0 22.23 0zM7.27 20.1H3.65V9.24h3.62V20.1zM5.47 7.76h-.03c-1.22 0-2-.83-2-1.87 0-1.06.8-1.87 2.05-1.87 1.24 0 2 .8 2.02 1.87 0 1.04-.78 1.87-2.05 1.87zM20.34 20.1h-3.63v-5.8c0-1.45-.52-2.45-1.83-2.45-1 0-1.6.67-1.87 1.32-.1.23-.11.55-.11.88v6.05H9.28s.05-9.82 0-10.84h3.63v1.54a3.6 3.6 0 0 1 3.26-1.8c2.39 0 4.18 1.56 4.18 4.89v6.21z"/>
+                                        </svg>
+                                    </a>
+                                    <a href="https://x.com/med_elabidi" target="_blank" class="text-gray-400 hover:text-blue-400 transition-colors duration-200">
+                                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                                        </svg>
+                                    </a>
+                                    <a href="https://github.com/mohamedamineelabidi" target="_blank" class="text-gray-400 hover:text-gray-800 transition-colors duration-200">
+                                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section class="py-20 bg-gray-50">
+                <div class="max-w-4xl mx-auto px-4">
+                    <!-- Section Header -->
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl font-bold mb-4 bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">
+                            Let's Work Together
+                        </h2>
+                        <p class="text-gray-600 text-lg font-medium">
+                            Available for freelance projects and full-time opportunities
+                        </p>
+                    </div>
+            
+                    <!-- Contact Card -->
+                    <div class="bg-white rounded-xl shadow-lg p-8">
+                        <div class="grid md:grid-cols-2 gap-12">
+                            <!-- Left Column - Contact Info -->
+                            <div class="space-y-6">
+                                <h3 class="text-2xl font-semibold text-gray-800">Get in Touch</h3>
+                                <p class="text-gray-600">
+                                    Whether you need a data analyst for your project or looking to hire, I'm open to discussing how I can help you achieve your goals.
+                                </p>
+                                
+                                <!-- Contact Details -->
+                                <div class="space-y-4">
+                                    <div class="flex items-center space-x-4">
+                                        <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+                                            <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <p class="text-sm text-gray-500">Email</p>
+                                            <a href="mailto:amine.elabidi@rapidflowai.com" class="text-blue-600 hover:text-blue-700 font-medium">amine.elabidi@rapidflowai.com</a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-center space-x-4">
+                                        <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
+                                            <svg class="w-5 h-5 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <p class="text-sm text-gray-500">Availability</p>
+                                            <p class="text-gray-900 font-medium">Open to Opportunities</p>
+                                        </div>
+                                    </div>
+            
+                                    <div class="flex items-center space-x-4">
+                                        <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
+                                            <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <p class="text-sm text-gray-500">Location</p>
+                                            <p class="text-gray-900 font-medium">Remote / Worldwide</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <!-- Right Column - Contact Form -->
+                            <form class="space-y-6">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                                    <input type="text" id="name" name="name" required
+                                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors">
+                                </div>
+            
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                                    <input type="email" id="email" name="email" required
+                                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors">
+                                </div>
+            
+                                <div>
+                                    <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                                    <input type="text" id="subject" name="subject" required
+                                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors">
+                                </div>
+            
+                                <div>
+                                    <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                                    <textarea id="message" name="message" rows="4" required
+                                        class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"></textarea>
+                                </div>
+            
+                                <button type="submit" 
+                                    class="w-full px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-medium rounded-lg 
+                                    hover:from-blue-600 hover:to-purple-700 transform transition-all hover:scale-105 focus:outline-none 
+                                    focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+</body>
+</html>
