@@ -34,8 +34,8 @@
     
                         <!-- Desktop Navigation -->
                         <div class="hidden sm:flex sm:items-center sm:space-x-8">
-                            <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition-all duration-300">Home</a>
-                            <a href="#" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition-all duration-300">About</a>
+                            <a href="index.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition-all duration-300">Home</a>
+                            <a href="about.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition-all duration-300">About</a>
                             <a href="project.html" class="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition-all duration-300">Projects</a>
                             <button onclick="scrollToSection()" class="px-4 py-2 rounded-md text-sm font-medium text-white bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105">Get Started</button>
                         </div>
@@ -62,6 +62,155 @@
                 </div>
             </nav>
         </header>
+
+<!-- section portfolio -->
+
+
+        <section class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Section Header -->
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold mb-4 bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">
+                        My Portfolio
+                    </h2>
+                    <p class="text-gray-600 text-lg font-medium max-w-2xl mx-auto">
+                        Explore my recent projects and achievements in data analysis, machine learning, and football analytics
+                    </p>
+                </div>
+        
+                <!-- Portfolio Grid -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Portfolio Item 1 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow transform hover:-translate-y-1 duration-300">
+                        <div class="relative">
+                            <div class="h-48 bg-gradient-to-r from-blue-500 to-purple-600">
+                                <img src="image/screenshot20240718231836.png" alt="Project Preview" class="w-full h-full object-cover opacity-75">
+                            </div>
+                            <div class="absolute top-4 left-4">
+                                <span class="px-3 py-1 bg-white rounded-full text-sm font-medium text-blue-600">
+                                    Data Analysis
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">
+                                Football Match Analysis Dashboard
+                            </h3>
+                            <p class="text-gray-600 mb-4">
+                                Interactive dashboard for analyzing team performance, player statistics, and match outcomes using Python and Streamlit.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-2 py-1 bg-blue-50 text-blue-600 rounded text-sm">Python</span>
+                                <span class="px-2 py-1 bg-purple-50 text-purple-600 rounded text-sm">Streamlit</span>
+                                <span class="px-2 py-1 bg-green-50 text-green-600 rounded text-sm">Pandas</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <a href="#" class="text-blue-600 hover:text-blue-700 font-medium flex items-center">
+                                    View Project
+                                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                                <div class="flex space-x-2">
+                                    <a href="#" class="text-gray-400 hover:text-gray-600">
+                                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="text-gray-400 hover:text-gray-600">
+                                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Portfolio Item 2 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow transform hover:-translate-y-1 duration-300">
+                        <div class="relative">
+                            <div class="h-48 bg-gradient-to-r from-green-400 to-blue-500">
+                                <img src="image/screenshot20240718232030.png" alt="Project Preview" class="w-full h-full object-cover opacity-75">
+                            </div>
+                            <div class="absolute top-4 left-4">
+                                <span class="px-3 py-1 bg-white rounded-full text-sm font-medium text-green-600">
+                                    Machine Learning
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">
+                                Player Performance Predictor
+                            </h3>
+                            <p class="text-gray-600 mb-4">
+                                ML model to predict player performance using historical data and advanced statistics.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-2 py-1 bg-blue-50 text-blue-600 rounded text-sm">TensorFlow</span>
+                                <span class="px-2 py-1 bg-purple-50 text-purple-600 rounded text-sm">Scikit-learn</span>
+                                <span class="px-2 py-1 bg-green-50 text-green-600 rounded text-sm">NumPy</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <a href="#" class="text-blue-600 hover:text-blue-700 font-medium flex items-center">
+                                    View Project
+                                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                                <div class="flex space-x-2">
+                                    <a href="#" class="text-gray-400 hover:text-gray-600">
+                                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Portfolio Item 3 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow transform hover:-translate-y-1 duration-300">
+                        <div class="relative">
+                            <div class="h-48 bg-gradient-to-r from-green-400 to-blue-500">
+                                <img src="image/screenshot20231214215358.png" alt="Project Preview" class="w-full h-full object-cover opacity-75">
+                            </div>
+                            <div class="absolute top-4 left-4">
+                                <span class="px-3 py-1 bg-white rounded-full text-sm font-medium text-green-600">
+                                    Machine Learning
+                                </span>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">
+                                Player Performance Predictor
+                            </h3>
+                            <p class="text-gray-600 mb-4">
+                                ML model to predict player performance using historical data and advanced statistics.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-2 py-1 bg-blue-50 text-blue-600 rounded text-sm">TensorFlow</span>
+                                <span class="px-2 py-1 bg-purple-50 text-purple-600 rounded text-sm">Scikit-learn</span>
+                                <span class="px-2 py-1 bg-green-50 text-green-600 rounded text-sm">NumPy</span>
+                            </div>
+                            <div class="flex justify-between items-center">
+                                <a href="#" class="text-blue-600 hover:text-blue-700 font-medium flex items-center">
+                                    View Project
+                                    <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                                    </svg>
+                                </a>
+                                <div class="flex space-x-2">
+                                    <a href="#" class="text-gray-400 hover:text-gray-600">
+                                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </section>
 
     <!-- Case Studies/Projects Showcase Section -->
     <section class="py-20 bg-white">
@@ -177,192 +326,175 @@
 
 
 
-
-    <section class="py-20 bg-gray-100">
+    <section class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Section Header -->
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold mb-4 bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">
-                    About Me
+                    Technologies I Use
                 </h2>
                 <p class="text-gray-600 text-lg font-medium max-w-2xl mx-auto">
-                    Passionate Data Analyst and Machine Learning enthusiast with a deep understanding of extracting valuable insights to drive performance optimization in various industries. I thrive on using data to solve complex challenges and drive impactful decisions.
+                    Tools and technologies that I leverage for data analysis, machine learning, and data science projects.
                 </p>
             </div>
     
-            <!-- About Content -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                <!-- Image or Illustration -->
-                <div>
-                    <img src="https://via.placeholder.com/400x400" alt="Profile Picture" class="rounded-xl shadow-lg mx-auto">
+            <!-- Technology Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Python -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow transform hover:-translate-y-1 duration-300">
+                    <div class="p-6 text-center">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python Logo" class="mx-auto mb-4 h-16">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Python</h3>
+                        <p class="text-gray-600">
+                            Python is essential for data analysis, machine learning, and backend services.
+                        </p>
+                    </div>
                 </div>
-                
-                <!-- Text Content -->
-                <div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-4">Who I Am</h3>
-                    <p class="text-gray-600 mb-4">
-                        I specialize in data analytics, machine learning, and web development with a passion for football analytics. My background includes working with various tools and technologies to create data-driven strategies that elevate team performance and business outcomes.
-                    </p>
-                    <p class="text-gray-600 mb-4">
-                        With extensive experience in Python, SQL, data visualization, and machine learning, I focus on finding patterns and insights that lead to actionable solutions. My goal is to continuously push the boundaries of data science and drive innovation through technology.
-                    </p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm font-medium">Data Science</span>
-                        <span class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm font-medium">Machine Learning</span>
-                        <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm font-medium">Data Visualization</span>
-                        <span class="px-3 py-1 bg-yellow-100 text-yellow-600 rounded-full text-sm font-medium">Football Analytics</span>
+    
+                <!-- Jupyter -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow transform hover:-translate-y-1 duration-300">
+                    <div class="p-6 text-center">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" alt="Jupyter Logo" class="mx-auto mb-4 h-16">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Jupyter</h3>
+                        <p class="text-gray-600">
+                            Jupyter notebooks make it easy to document, visualize, and analyze data in Python.
+                        </p>
+                    </div>
+                </div>
+    
+                <!-- SQL -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow transform hover:-translate-y-1 duration-300">
+                    <div class="p-6 text-center">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" alt="SQL Logo" class="mx-auto mb-4 h-16">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">SQL</h3>
+                        <p class="text-gray-600">
+                            SQL is critical for querying and managing databases.
+                        </p>
+                    </div>
+                </div>
+    
+                <!-- Pandas -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow transform hover:-translate-y-1 duration-300">
+                    <div class="p-6 text-center">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas Logo" class="mx-auto mb-4 h-16">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Pandas</h3>
+                        <p class="text-gray-600">
+                            Pandas is my go-to library for data manipulation and analysis in Python.
+                        </p>
+                    </div>
+                </div>
+    
+                <!-- NumPy -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow transform hover:-translate-y-1 duration-300">
+                    <div class="p-6 text-center">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy Logo" class="mx-auto mb-4 h-16">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">NumPy</h3>
+                        <p class="text-gray-600">
+                            NumPy helps me handle large multi-dimensional arrays and matrices in Python.
+                        </p>
+                    </div>
+                </div>
+    
+                <!-- Matplotlib -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow transform hover:-translate-y-1 duration-300">
+                    <div class="p-6 text-center">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" alt="Matplotlib Logo" class="mx-auto mb-4 h-16">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Matplotlib</h3>
+                        <p class="text-gray-600">
+                            Matplotlib is used for creating static, animated, and interactive visualizations.
+                        </p>
+                    </div>
+                </div>
+    
+                <!-- SciKit-Learn -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow transform hover:-translate-y-1 duration-300">
+                    <div class="p-6 text-center">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg" alt="Scikit-Learn Logo" class="mx-auto mb-4 h-16">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Scikit-Learn</h3>
+                        <p class="text-gray-600">
+                            I use Scikit-Learn for building and training machine learning models.
+                        </p>
+                    </div>
+                </div>
+    
+                <!-- Tableau -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow transform hover:-translate-y-1 duration-300">
+                    <div class="p-6 text-center">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tableau/tableau-original.svg" alt="Tableau Logo" class="mx-auto mb-4 h-16">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Tableau</h3>
+                        <p class="text-gray-600">
+                            Tableau is my choice for interactive data visualization and business intelligence.
+                        </p>
+                    </div>
+                </div>
+    
+                <!-- Power BI -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow transform hover:-translate-y-1 duration-300">
+                    <div class="p-6 text-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" alt="Power BI Logo" class="mx-auto mb-4 h-16">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Power BI</h3>
+                        <p class="text-gray-600">
+                            I use Power BI for business analytics, sharing insights, and creating dashboards.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     
+
     
-
-
-
-
-
     <section class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Section Header -->
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold mb-4 bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">
-                    My Portfolio
+                    Certifications
                 </h2>
                 <p class="text-gray-600 text-lg font-medium max-w-2xl mx-auto">
-                    Explore my recent projects and achievements in data analysis, machine learning, and football analytics
+                    Achievements and credentials that showcase my knowledge and expertise in data science and development.
                 </p>
             </div>
     
-            <!-- Portfolio Grid -->
+            <!-- Certification Badges Grid -->
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Portfolio Item 1 -->
+                <!-- Certification Badge 1 -->
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow transform hover:-translate-y-1 duration-300">
-                    <div class="relative">
-                        <div class="h-48 bg-gradient-to-r from-blue-500 to-purple-600">
-                            <img src="image/screenshot20240718231836.png" alt="Project Preview" class="w-full h-full object-cover opacity-75">
-                        </div>
-                        <div class="absolute top-4 left-4">
-                            <span class="px-3 py-1 bg-white rounded-full text-sm font-medium text-blue-600">
-                                Data Analysis
-                            </span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">
-                            Football Match Analysis Dashboard
+                    <div class="p-6 text-center">
+                        <img src="image/R (2).png" alt="Certification Badge" class="mx-auto mb-4 h-24">
+                        <h3 class="text-xl font-bold text-gray-900">
+                            Google Data analytics
                         </h3>
-                        <p class="text-gray-600 mb-4">
-                            Interactive dashboard for analyzing team performance, player statistics, and match outcomes using Python and Streamlit.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-2 py-1 bg-blue-50 text-blue-600 rounded text-sm">Python</span>
-                            <span class="px-2 py-1 bg-purple-50 text-purple-600 rounded text-sm">Streamlit</span>
-                            <span class="px-2 py-1 bg-green-50 text-green-600 rounded text-sm">Pandas</span>
-                        </div>
-                        <div class="flex justify-between items-center">
-                            <a href="#" class="text-blue-600 hover:text-blue-700 font-medium flex items-center">
-                                View Project
-                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                                </svg>
-                            </a>
-                            <div class="flex space-x-2">
-                                <a href="#" class="text-gray-400 hover:text-gray-600">
-                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                                    </svg>
-                                </a>
-                                <a href="#" class="text-gray-400 hover:text-gray-600">
-                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
                     </div>
                 </div>
     
-                <!-- Portfolio Item 2 -->
+                <!-- Certification Badge 2 -->
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow transform hover:-translate-y-1 duration-300">
-                    <div class="relative">
-                        <div class="h-48 bg-gradient-to-r from-green-400 to-blue-500">
-                            <img src="image/screenshot20240718232030.png" alt="Project Preview" class="w-full h-full object-cover opacity-75">
-                        </div>
-                        <div class="absolute top-4 left-4">
-                            <span class="px-3 py-1 bg-white rounded-full text-sm font-medium text-green-600">
-                                Machine Learning
-                            </span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">
-                            Player Performance Predictor
+                    <div class="p-6 text-center">
+                        <img src="image/data_analytics_365datascience.png" alt="Certification Badge" class="mx-auto mb-4 h-24">
+                        <h3 class="text-xl font-bold text-gray-900">
+                            Data analyst career track
                         </h3>
-                        <p class="text-gray-600 mb-4">
-                            ML model to predict player performance using historical data and advanced statistics.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-2 py-1 bg-blue-50 text-blue-600 rounded text-sm">TensorFlow</span>
-                            <span class="px-2 py-1 bg-purple-50 text-purple-600 rounded text-sm">Scikit-learn</span>
-                            <span class="px-2 py-1 bg-green-50 text-green-600 rounded text-sm">NumPy</span>
-                        </div>
-                        <div class="flex justify-between items-center">
-                            <a href="#" class="text-blue-600 hover:text-blue-700 font-medium flex items-center">
-                                View Project
-                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                                </svg>
-                            </a>
-                            <div class="flex space-x-2">
-                                <a href="#" class="text-gray-400 hover:text-gray-600">
-                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
                     </div>
                 </div>
     
-                <!-- Portfolio Item 3 -->
+                <!-- Certification Badge 3 -->
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow transform hover:-translate-y-1 duration-300">
-                    <div class="relative">
-                        <div class="h-48 bg-gradient-to-r from-purple-500 to-pink-500">
-                            <img src="image/DALL·E 2024-10-07 20.41.39 - A detailed flowchart showing the phases of a machine learning project, starting from data collection, data processing, to modeling. Phase 1 is 'Data C.webp" alt="Project Preview" class="w-full h-full object-cover opacity-75">
-                        </div>
-                        <div class="absolute top-4 left-4">
-                            <span class="px-3 py-1 bg-white rounded-full text-sm font-medium text-purple-600">
-                                Web Development
-                            </span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">
-                            Team Formation Analyzer
+                    <div class="p-6 text-center">
+                        <img src="image/badge3.png" alt="Certification Badge" class="mx-auto mb-4 h-24">
+                        <h3 class="text-xl font-bold text-gray-900">
+                            Frontend Development
                         </h3>
-                        <p class="text-gray-600 mb-4">
-                            Web application for analyzing and visualizing team formations and tactical patterns.
-                        </p>
-                        <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-2 py-1 bg-blue-50 text-blue-600 rounded text-sm">React</span>
-                            <span class="px-2 py-1 bg-purple-50 text-purple-600 rounded text-sm">D3.js</span>
-                            <span class="px-2 py-1 bg-green-50 text-green-600 rounded text-sm">Node.js</span>
-                        </div>
-                        <div class="flex justify-between items-center">
-                            <a href="#" class="text-blue-600 hover:text-blue-700 font-medium flex items-center">
-                                View Project
-                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                                </svg>
-                            </a>
-                            <div class="flex space-x-2">
-                                <a href="#" class="text-gray-400 hover:text-gray-600">
-                                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+
+
+
+    
 
 </body>
 </html>
